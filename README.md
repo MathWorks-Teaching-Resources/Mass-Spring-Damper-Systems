@@ -2,7 +2,7 @@
 **Curriculum Module**  
 _Created with R2020b. Compatible with R2020b and later releases._  
 
-<img src="2-mass-spring-damper.gif" width="350">
+<img src="https://user-images.githubusercontent.com/81383420/122805177-c65f6500-d296-11eb-9684-5f1f70b4ea03.gif" width="350">
 
 ## Description ##
 This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) and [Simulink&reg; models](https://www.mathworks.com/products/simulink.html) that explore mass-spring-damper systems. Students learn to create and work with mass-spring-damper models in guided activities. These techniques are motivated by two applications: tuning the damping of a vehicle’s suspension and analyzing a building’s response to an earthquake. Throughout the module, students apply Simulink models to study the dynamics of the physical systems. In the final lesson, students identify the resonant frequencies of a mass-spring-damper building model by computing the power spectrum of a displacement signal. These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class.
@@ -42,6 +42,13 @@ Simulink models used during the guided activities. Starter models and their comp
 ## Products ##
 MATLAB&reg;, Symbolic Math Toolbox&trade;, Simulink
 
+## License ##
+The license for this module is available in the [LICENSE.TXT](license.txt) file in this GitHub repository.
+
+## Support ##
+Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
+
 # #
+
 
 _Copyright 2021 The MathWorks, Inc._
