@@ -31,8 +31,8 @@ Results = Runner.run(Suite);
 
 % Format the results in a table and save them
 Results = table(Results');
-Results = Results(Results.Passed,:);
 Version = extractBetween(string(Results.Name),"Version=",")");
+Passed = Results.Passed;
 
 % Add link to other report
 File = fileread(fullfile("public","index.html"));
@@ -45,13 +45,16 @@ writelines(File,fullfile("public","index.html"),"WriteMode","overwrite");
 % Format the JSON file
 Badge = struct;
 Badge.schemaVersion = 1;
-Badge.label = "Tested with";
-if size(Results,1) >= 1
-    Badge.color = "success"
+Badge.label = "Test Status";
+if all(Passed)
+    Badge.color = "success";
     Badge.message = join("R"+Version," | ");
-else
-    Badge.color = "failure";
-    Badge.message = "Pipeline fails";
+elseif any(Passed)
+    Badge.color = "yellowgreen";
+    Badge.message = join("R")
+elseif all(~Passed)
+    Badge.color = "critical";
+    Badge.message = join("R"+Version," | ");
 end
 Badge = jsonencode(Badge);
 writelines(Badge,fullfile("Images","TestedWith.json"));
