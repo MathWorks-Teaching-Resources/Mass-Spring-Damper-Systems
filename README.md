@@ -1,64 +1,93 @@
-# Mass-Spring-Damper Systems 
 
-[![View Mass-Spring-Damper Systems on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/94585-mass-spring-damper-systems) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems&file=massSpringDamper.mlx)
-
-
-**Curriculum Module**  
-_Created with R2020b. Compatible with R2020b and later releases._  
-
-<img src="https://user-images.githubusercontent.com/81383420/122805177-c65f6500-d296-11eb-9684-5f1f70b4ea03.gif" width="350">
-
-## Description ##
-This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) and [Simulink&reg; models](https://www.mathworks.com/products/simulink.html) that explore mass-spring-damper systems. Students learn to create and work with mass-spring-damper models in guided activities. These techniques are motivated by two applications: tuning the damping of a vehicle’s suspension and analyzing a building’s response to an earthquake. Throughout the module, students apply Simulink models to study the dynamics of the physical systems. In the final lesson, students identify the resonant frequencies of a mass-spring-damper building model by computing the power spectrum of a displacement signal. These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class.
-
-**Learning Goals**
-- Construct free body diagrams and derive the equations of motion for mass-spring-damper systems
-- Relate the mass, spring, and damper to their corresponding components in a physical system
-- Create models that solve ordinary differential equations in Simulink
-- Use the Symbolic Math Toolbox to help create Simulink models
-- Complete Simulink mass-spring-damper models with 1, 2, and n degrees of freedom
-- Relate parameter values to the dynamics of mass-spring-damper systems
-- Tune the damping of a vehicle suspension model to meet requirements
-- Identify the resonant modes of a mass-spring-damper building model
-
-The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the Stop button in the RUN section of the Live Editor tab in the MATLAB Toolstrip.
-
-## Suggested Prework ##
-[MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) – a free two-hour introductory tutorial that teaches the essentials of MATLAB.
-<br>
-[Simulink Onramp](https://matlabacademy.mathworks.com/details/simulink-onramp/simulink) – a free three-hour introductory tutorial that teaches the essentials of Simulink.
-
-## Details ##
-
-**`massSpringDamper.mlx, massSpringDamperSoln.mlx`**  
-An interactive lesson that teaches how to model a single mass-spring-damper in Simulink. Students apply their knowledge to tune the damping of a vehicle’s suspension system.
-
-## ##
-**`doubleMassSpringDamper.mlx, doubleMassSpringDamperSoln.mlx`**  
-An interactive lesson that teaches how to model a double mass-spring-damper in Simulink. Students apply their knowledge to identify the resonant frequencies present in a two-story building model.
-
-## ##
-**`multipleMassSpringDamper.mlx, multipleMassSpringDamperSoln.mlx`**  
-Students practice more advanced skills in this lesson, such as vectorizing a Simulink model and using the Spectrum Analyzer block to compute the power spectrum.
-
-## ##
-**`models/`**  
-Simulink models used during the guided activities. Starter models and their completed solutions are included.
-
-## Products ##
-MATLAB&reg;, Symbolic Math Toolbox&trade;, Simulink
-
-## License ##
-The license for this module is available in the [LICENSE.TXT](license.txt) file in this GitHub repository.
-
-## Educator Resources ##
-* [Featured Courseware](https://www.mathworks.com/academia/courseware/course-materials.html)
-* [Teach with MATLAB and Simulink](https://www.mathworks.com/academia/educators.html)
-* [MATLAB Grader](https://www.mathworks.com/products/matlab-grader.html)
-
-Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
-
-# #
+# <span style="color:rgb(213,80,0)">Mass\-Spring\-Damper Systems</span>
 
 
-_Copyright 2021 The MathWorks, Inc._
+[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/94585-mass-spring-damper-systems) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems&project=mass-spring-damper-systems.prj&file=README.mlx)
+
+[![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FMass-Spring-Damper-Systems%2Frelease%2FImages%2FTestedWith.json)](https://MathWorks-Teaching-Resources.github.io/Mass-Spring-Damper-Systems)
+
+**Curriculum Module**
+
+_Created with R2020b. Compatible with R2024a and later releases._
+
+# Information
+
+This curriculum module contains interactive [MATLAB® live scripts](https://www.mathworks.com/products/matlab/live-editor.html) and [Simulink® models](https://www.mathworks.com/products/simulink.html)  that explore mass\-spring\-damper systems. Students learn to create and work with mass\-spring\-damper models in guided activities.
+
+
+## Background
+
+These techniques are motivated by two applications: tuning the damping of a vehicle’s suspension and analyzing a building’s response to an earthquake. Throughout the module, students apply Simulink models to study the dynamics of the physical systems. In the final lesson, students identify the resonant frequencies of a mass\-spring\-damper building model by computing the power spectrum of a displacement signal.
+
+
+The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/image_0.png" width="19" alt="image_0.png"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
+
+## Contact Us
+
+Contact the [MathWorks teaching resources team](mailto:onlineteaching@mathworks.com) if you would like to provide feedback, or if you have a question.
+
+
+## Prerequisites
+
+This module assumes knowledge of free\-body diagram and mechanics. Those interested in additional training should consider completing [MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) & [Simulink Onramp](https://matlabacademy.mathworks.com/details/simulink-onramp/simulink) as a further learning exploration.
+
+
+## Getting Started
+### Accessing the Module
+### **On MATLAB Online:**
+
+Use the [<img src="Images/image_1.png" width="136" alt="image_1.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems) link to download the module. You will be prompted to log in or create a MathWorks account. The project will be loaded, and you will see an app with several navigation options to get you started.
+
+### **On Desktop:**
+
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [mass\-spring\-damper\-systems.prj](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems&project=mass-spring-damper-systems.prj&file=README.mlx). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
+
+
+Ensure you have all the required products (listed below) installed. If you need to include a product, add it using the Add\-On Explorer. To install an add\-on, go to the **Home** tab and select  <img src="Images/image_2.png" width="16" alt="image_2.png"> **Add-Ons** > **Get Add-Ons**. 
+
+
+## Products
+
+MATLAB®, Simulink®, Symbolic Math Toolbox™.
+
+# Scripts
+## [**MassSpringDamper.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems&project=mass-spring-damper-systems.prj&file=Scripts/MassSpringDamper.mlx)
+|      |      |
+| :-- | :-- |
+| <img src="Images/image_3.png" width="171" alt="image_3.png"> <br>  | **In this script, students will...** <br> $\bullet$ model a single mass\-spring\-damper. <br> $\bullet$ Turn the damping of a vehicle suspension system. <br> $\bullet$ Relate the mass, spring, and damper to their corresponding components in a physical system <br>   |
+|      |       |
+
+## [**DoubleMassSpringDamper.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems&project=mass-spring-damper-systems.prj&file=Scripts/DoubleMassSpringDamper.mlx)
+|      |      |
+| :-- | :-- |
+| <img src="Images/image_4.gif" width="171" alt="image_4.gif"> <br>  | **In this script, students will...** <br> $\bullet$ model a double mass\-spring\-damper in Simulink <br> $\bullet$ Identify the resonant frequencies present in a two\-story building, <br> $\bullet$ Use the Symbolic Math Toolbox to help create Simulink models <br>   |
+|      |       |
+
+## [**MultipleMassSpringDamper.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems&project=mass-spring-damper-systems.prj&file=Scripts/MultipleMassSpringDamper.mlx)
+|      |      |
+| :-- | :-- |
+| <img src="Images/image_5.gif" width="171" alt="image_5.gif"> <br>  | **In this script, students will...** <br> $\bullet$ Vectorize a Simulink model for multiple building analysis. <br> $\bullet$ Use the spectrum analyzer block to compute the power spectrum. <br> $\bullet$ Complete Simulink mass\-spring\-damper models with n degrees of freedom <br>   |
+|      |       |
+
+# Related Courseware Modules
+
+## [Beam Bending and Deflection](https://www.mathworks.com/matlabcentral/fileexchange/113670-beam-bending-and-deflection?s_tid=ta_fx_results)
+|      |      |
+| :-- | :-- |
+| <img src="Images/image_6.png" width="171" alt="image_6.png"> <br>  | **Available on:** <br> [<img src="Images/image_7.png" width="91" alt="image_7.png">](https://www.mathworks.com/matlabcentral/fileexchange/113670-beam-bending-and-deflection?s_tid=ta_fx_results)  <br> [<img src="Images/image_8.png" width="136" alt="image_8.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Beam-Bending-and-Deflection&project=MechanicsOfMaterials.prj)  <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Beam-Bending-and-Deflection)  <br>   |
+|      |       |
+
+
+Or feel free to explore our other [modular courseware content](https://www.mathworks.com/matlabcentral/fileexchange/?q=tag%3A%22courseware+module%22&sort=downloads_desc_30d).
+
+# Educator Resources
+-  [Educator Page](https://www.mathworks.com/academia/educators.html) 
+
+# Contribute 
+
+Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks teaching resources team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems/blob/release/CONTRIBUTING.md) page on GitHub.
+
+
+ *©* Copyright 2023 The MathWorks™, Inc
+
+
