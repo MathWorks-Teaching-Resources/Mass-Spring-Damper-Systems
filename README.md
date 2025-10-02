@@ -24,7 +24,7 @@ The instructions inside the live scripts will guide you through the exercises an
 
 ## Contact Us
 
-Contact the [MathWorks teaching resources team](mailto:onlineteaching@mathworks.com) if you would like to provide feedback, or if you have a question.
+Contact the [MathWorks Educator Content Development Team](mailto:onlineteaching@mathworks.com) if you would like to provide feedback, or if you have a question.
 
 
 ## Prerequisites
@@ -85,9 +85,9 @@ Or feel free to explore our other [modular courseware content](https://www.mathw
 
 # Contribute 
 
-Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks teaching resources team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems/blob/release/CONTRIBUTING.md) page on GitHub.
+Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks Educator Content Development Team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Mass-Spring-Damper-Systems/blob/release/CONTRIBUTING.md) page on GitHub.
 
 
- *©* Copyright 2023 The MathWorks™, Inc
+ *©* Copyright 2025 The MathWorks™, Inc
 
 
